@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
+
+:root {
+  --bg-1: #eafdf6;
+  --bg-2: #dfefff;
+  --panel: rgba(255, 255, 255, 0.82);
+  --panel-strong: #ffffff;
+  --green: #9fe7be;
+  --green-deep: #69c99b;
+  --blue: #7bb9ff;
+  --blue-deep: #4aa0f0;
+  --text: #163b3d;
+  --muted: #557778;
+  --border: rgba(101, 170, 255, 0.25);
+  --shadow: 0 16px 30px rgba(61, 117, 149, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+.hero h1,
+#dashboard h1 {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+#visitor,
+#dashboard,
+.wrapper,
+.hero,
+.website-grid,
+.signup-btn {
+  display: block;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+form {
+  width: 100%;
+  max-width: 420px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px 28px;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--green-deep);
+  text-shadow: 0 2px 8px rgba(105, 201, 155, 0.25);
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(102, 177, 255, 0.35);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: var(--blue-deep);
+  box-shadow: 0 0 0 4px rgba(123, 185, 255, 0.16);
+}
+
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.remember-forget label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember-forget input {
+  accent-color: var(--green-deep);
+}
+
+.remember-forget a,
+form p a,
+nav a,
+#moreMenu a,
+#moreMenu button {
+  color: var(--blue-deep);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.remember-forget a:hover,
+form p a:hover,
+nav a:hover,
+#moreMenu a:hover,
+#moreMenu button:hover {
+  color: var(--green-deep);
+}
+
+.btn,
+.signup-btn,
+#moreBtn {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(92, 171, 255, 0.25);
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.btn:hover,
+.signup-btn:hover,
+#moreBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(92, 171, 255, 0.28);
+}
+
+form p {
+  text-align: center;
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+#visitor {
+  padding: 32px 20px 60px;
+}
+
+#visitorHome {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  padding: 28px 30px 36px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+nav a {
+  font-weight: 700;
+}
+
+.hero h1,
+.hero p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero p {
+  max-width: 700px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+section {
+  margin-top: 28px;
+}
+
+.website-grid {
+  margin-top: 20px;
+}
+
+.website-card {
+  display: block;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.website-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.website-card h3 {
+  color: var(--green-deep);
+  margin-bottom: 8px;
+}
+
+.signup-btn {
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+#dashboard {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+#dashboard h1,
+#dashboard p {
+  text-align: center;
+}
+
+#moreBtn {
+  padding: 10px 14px;
+  margin-top: 18px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+#moreMenu {
+  display: none;
+  margin-top: 18px;
+  gap: 14px;
+  flex-direction: column;
+}
+
+#moreMenu a,
+#moreMenu button {
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#signout,
+.signout-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(92, 171, 255, 0.25);
+}
+
+#signout:hover,
+.signout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(92, 171, 255, 0.28);
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 22px 18px;
+  }
+
+  .remember-forget {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
